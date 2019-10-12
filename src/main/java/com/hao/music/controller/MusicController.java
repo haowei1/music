@@ -15,6 +15,7 @@ import java.util.Map;
  */
 @CrossOrigin
 @RestController
+@RequestMapping("music")
 public class MusicController {
 
     @Autowired
@@ -48,6 +49,12 @@ public class MusicController {
     @RequestMapping("lrc")
     public String getMusicLrc(@RequestBody Map<String, String> map) {
         return musicServer.getMusicLrc(map.get("musicId"));
+    }
+
+
+    @RequestMapping("hello")
+    public String hello() {
+        return "hello world";
     }
 
 }

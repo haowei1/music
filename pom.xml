@@ -12,7 +12,7 @@
     <groupId>com.hao</groupId>
     <artifactId>music</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>music</name>
     <description>Demo project for Spring Boot</description>
 
@@ -51,9 +51,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
         </plugins>
-        <finalName>Music</finalName>
+        <finalName>music</finalName>
     </build>
 
 </project>
